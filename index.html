@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Blog</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <h1>Coffee Blog</h1>
+      <nav class="header-nav">
+        <a href="#">About us</a><a href="#">Courses</a><a href="#">Contact</a>
+      </nav>
       <h2>Coffee Blog with tips and courses</h2>
       <p>Learn from the experts with the best recipes and tips.</p>
     </header>
-    <main>
+    <main class="container">
       <h2>Our Blog</h2>
-      <article>
+      <article class="article-blog">
+        <img src="media/blog1.jpg" alt="" />
         <h3>Coffee Bean Type</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
@@ -21,8 +26,10 @@
           doloribus soluta cupiditate numquam nisi minima blanditiis architecto
           dolore quisquam dicta!
         </p>
+        <a href="#">Read more</a>
       </article>
-      <article>
+      <article class="article-blog">
+        <img src="media/blog2.jpg" alt="" />
         <h3>3 Delicious Coffee Recipes</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, quas
@@ -30,8 +37,10 @@
           iure doloremque voluptatum vitae autem ratione assumenda? Veniam, ex
           enim!
         </p>
+        <a href="#">Read more</a>
       </article>
-      <article>
+      <article class="article-blog">
+        <img src="media/blog3.jpg" alt="" />
         <h3>Coffee Benefits</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
@@ -39,8 +48,30 @@
           voluptatibus nihil dolor esse, dolore asperiores dolorum magni tempore
           laborum voluptatum labore enim minus.
         </p>
+        <a href="#">Read more</a>
       </article>
-      <h2>Coffee Blog</h2>
+      <div class="courses">
+        <article>
+          <h2>Our courses and workshops</h2>
+          <h3>Cofee extraction techniques</h3>
+          <p><b>Price:</b> Free</p>
+          <p><b>Seat:</b> 20</p>
+          <a href="#">More information</a>
+        </article>
+        <article>
+          <h2>4 coffee recipes for begginers</h2>
+          <h3>Cofee extraction techniques</h3>
+          <p><b>Price:</b> Free</p>
+          <p><b>Seat:</b> 20</p>
+          <a href="#">More information</a>
+        </article>
+      </div>
     </main>
+    <footer>
+      <h2 class="footer-title">Coffee Blog</h2>
+      <nav class="footer-nav">
+        <a href="#">About us</a><a href="#">Courses</a><a href="#">Contact</a>
+      </nav>
+    </footer>
   </body>
 </html>
