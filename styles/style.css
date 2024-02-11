@@ -1,6 +1,10 @@
 /* Global */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
 }
 
@@ -11,13 +15,12 @@ footer {
   text-align: center;
 }
 
-h1 {
-  margin-top: 0;
-  padding-top: 2em;
+h2 {
+  font-size: 2em;
 }
 
-h2 {
-  text-align: center;
+.title {
+  display: none;
 }
 
 p {
@@ -30,21 +33,29 @@ img {
 
 /* Utilities */
 .container {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.sub1 {
+  margin: 0;
+}
+
+.sub2 {
+  margin: 0;
+  font-size: 1.2em;
 }
 
 /* Header */
 .site-header {
   background-image: url(../media/banner.jpg);
-  height: 20em;
+  height: 28em;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
   margin: 0;
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 .header-nav a {
@@ -54,19 +65,66 @@ img {
   padding: 0.5em 1em 0.5em 1em;
 }
 
+.flex-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-desc {
+  padding-top: 6%;
+}
+
 /* Main */
-.courses h2 {
+.flex-courses {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.flex-courses h2 {
   text-align: left;
 }
 
-.courses a {
+.flex-courses h3 {
+  font-size: 1.4em;
+}
+
+.btn-info {
   display: inline-block;
-  background-color: #7b4d1d;
+  background-color: #523820;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1em;
-  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.flex-courses article {
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 2em;
+}
+
+.flex-courses article:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.nav-coffee {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.nav-blog {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.nav-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: white;
 }
 
 /* Article */
@@ -75,7 +133,11 @@ img {
   margin-bottom: 2em;
 }
 
-.article-blog a {
+.article-blog:last-child {
+  border: none;
+}
+
+.btn-read {
   display: inline-block;
   background-color: black;
   color: white;
@@ -83,25 +145,28 @@ img {
   margin-bottom: 2em;
   padding: 1em;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.flex-articles article:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.flex-articles {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.about {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h2 {
+  text-align: center;
 }
 
 /* Footer */
-.footer-title {
-  margin-bottom: 0;
-  padding-top: 2em;
-  font-size: 2em;
-}
-
-.footer-nav {
-  padding-bottom: 1em;
-}
-
-.footer-nav a {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 2em;
-  padding: 1em;
-}
