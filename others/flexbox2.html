@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox 2</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      h2 {
+        margin-bottom: 0.1em;
+      }
+
+      .flex-top {
+        display: flex;
+        background-color: lightgrey;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 4em;
+        padding-top: 4em;
+      }
+
+      .flex-top img {
+        width: 20%;
+      }
+
+      .flex-left {
+        display: flex;
+        background-color: lightpink;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .flex-right {
+        display: flex;
+        background-color: lightskyblue;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .flex-right img {
+        max-width: 100%;
+        min-height: 50%;
+      }
+
+      .flex-right p {
+        height: 50%;
+      }
+
+      .flex-bottom {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-top">
+      <h1>This is an H1</h1>
+      <img src="media/blog1.jpg" alt="Coffee" />
+    </div>
+    <div class="flex-bottom">
+      <div class="flex-left">
+        <h2>This is a list:</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div class="flex-right">
+        <img src="media/blog2.jpg" alt="Coffee" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ut
+          fuga similique debitis ullam veniam. Iste voluptatum, sit dicta quos
+          odio veritatis inventore non optio vitae, nobis harum numquam
+          explicabo! Distinctio vero repellendus aliquam voluptate consequuntur
+          quisquam sed obcaecati officia sunt pariatur corrupti hic quia
+          expedita, perferendis soluta consectetur doloribus earum facere! Vero
+          eveniet officia, provident neque quo cum nobis!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
