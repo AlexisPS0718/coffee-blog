@@ -4,8 +4,15 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
+  min-height: 100vh;
   margin: 0;
+}
+
+main {
+  flex: 1;
 }
 
 footer {
@@ -29,6 +36,7 @@ p {
 
 img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Utilities */
@@ -75,6 +83,10 @@ img {
   padding-top: 6%;
 }
 
+.contact-header {
+  background-color: black;
+}
+
 /* Main */
 .flex-courses {
   display: flex;
@@ -98,6 +110,7 @@ img {
   text-transform: uppercase;
   padding: 1em;
   font-weight: 700;
+  border-radius: 10px;
 }
 
 .flex-courses article {
@@ -146,6 +159,7 @@ img {
   padding: 1em;
   text-transform: uppercase;
   font-weight: 700;
+  border-radius: 10px;
 }
 
 .flex-articles article:last-of-type {
@@ -170,3 +184,133 @@ img {
 }
 
 /* Footer */
+
+/* Contact */
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.img-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container h2 {
+  text-align: center;
+}
+
+.form-container {
+  background-color: white;
+  width: 45%;
+  padding-top: 2em;
+  padding-left: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4em;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.button-container {
+  text-align: end;
+  padding-right: 2.5em;
+}
+
+.input-container {
+  margin-bottom: 1em;
+}
+
+.input-container label {
+  display: inline-block;
+  text-align: right;
+  width: 4em;
+}
+
+.input-container label:hover {
+  cursor: text;
+}
+
+.input-container input {
+  height: 2em;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  padding-left: 0.5em;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.input-container textarea {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  padding-left: 0.5em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  resize: none;
+}
+
+.input-container input,
+textarea {
+  width: 75%;
+}
+
+/* Courses */
+.container-courses {
+  width: 60%;
+  margin: 0 auto 3em auto;
+}
+
+.container-courses h2 {
+  text-align: center;
+}
+
+.course-featured {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.course-featured h3 {
+  font-size: 2em;
+}
+
+.course-featured p {
+  font-size: 1em;
+}
+
+.course-box {
+  width: fit-content;
+}
+
+.course-img {
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.course-others {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.course-box-others {
+  width: 60%;
+}
+
+.course-box-others img {
+  width: 100%;
+  height: 18vh;
+}
+
+.simple-info {
+  color: #523820;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 3px solid #523820;
+  padding-bottom: 3px;
+}
